@@ -1,0 +1,50 @@
+.hero
+  position: relative
+  top: 50%
+  transform: translate(0, -100%)
+  z-index: 0
+
+  @media (max-width: 730px)
+    top: 40%
+
+
+.hero__content
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  justify-content: center
+
+.hero__title
+  font-size: 64px
+  color: var(--text-accent)
+  font-weight: 700
+
+  @media (max-width: 730px)
+    font-size: 46px
+
+  @media (max-width: 450px)
+    font-size: 32px
+
+.hero__desc
+  margin-top: 12px
+  font-size: 24px
+  color: var(--ui-muted)
+  font-weight: 600
+
+  @media (max-width: 730px)
+    font-size: 18px
+
+  @media (max-width: 450px)
+    font-size: 14px
+
+.hero-btn
+  margin-top: 32px
+  padding: 12px 24px
+  border: 1px solid var(--ui-muted)
+  transition: .3s linear
+
+  &:hover
+    transition: .3s linear
+    background-color: var(--text-accent)
+    color: var(--standart)

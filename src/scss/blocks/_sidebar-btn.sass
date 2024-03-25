@@ -1,21 +1,23 @@
 .sidebar-btn
-  position: relative
-  display: flex
-  justify-content: flex-end
-  gap: 5px
-  z-index: 3
-  transition: .3s linear
-  span
-    background-color: #333
-    width: 2px
-    height: 25px
-    transition: .3s linear
-  &.active
+  display: none
+  @media (max-width: 555px)
+    position: relative
+    display: flex
+    justify-content: flex-end
+    gap: 5px
+    z-index: 3
     transition: .3s linear
     span
-      transform: scale(0)
+      background-color: #333
+      width: 2px
+      height: 25px
       transition: .3s linear
-      &:first-child
-        transform: rotateX(1deg)
-      &:last-child
-        transform: rotateX(1deg)
+    &.active
+      transition: .3s linear
+      span
+        transform: scale(0)
+        transition: .3s linear
+        &:first-child
+          transform: rotateX(1deg)
+        &:last-child
+          transform: rotateX(1deg)

@@ -1,0 +1,66 @@
+.blog-card
+  width: 250px
+
+.blog-card__img img
+  border-radius: 8px 8px 0 0
+
+.blog-card__text
+  padding: 10px
+  border: 1px solid #cacaca46
+  border-radius: 0px 0px 8px 8px
+  border-top: none
+
+.blog-card__name
+  display: flex
+  justify-content: space-between
+  align-items: center
+  gap: 16px
+  @media (max-width: 385px)
+    flex-direction: column
+    align-items: flex-start
+    gap: 8px
+
+.blog-card__title
+  font-size: 18px
+  font-weight: 700
+  @media (max-width: 385px)
+    font-size: 16px
+
+.card-name__author
+  font-size: 12px
+  font-weight: 500
+  color: var(--ui-muted)
+
+.card-name__date
+  display: flex
+  gap: 8px
+
+.blog-card__desc
+  margin-top: 16px
+  height: 80px
+  overflow: hidden
+  position: relative
+
+  p
+    display: -webkit-box
+    -webkit-box-orient: vertical
+    -webkit-line-clamp: 4
+    overflow: hidden
+    text-overflow: ellipsis
+    font-size: 16px
+    @media (max-width: 385px)
+      font-size: 14px
+
+.blog-card__btn
+  margin-top: 8px
+  button
+    padding: 8px 12px
+    border: 1px solid var(--text-accent)
+    background: transparent
+    font-size: 14px
+    transition: .2s linear
+
+    &:hover
+      color: var(--standart)
+      background: var(--text-accent)
+      transition: .2s linear

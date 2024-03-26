@@ -1,0 +1,77 @@
+.authors
+  margin-top: 120px
+
+.authors__title
+  font-size: 32px
+  font-weight: 700
+
+.authors__content
+  margin-top: 24px
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  gap: 16px
+
+.authors-list
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  gap: 16px
+
+.author-card
+  display: flex
+  flex-direction: column
+  width: 300px
+  border: 1px solid rgba(202, 202, 202, 0.2745098039)
+  border-radius: 0px 0px 8px 8px
+  border-top: none
+
+.author-card__img
+  img
+    border-radius: 8px 8px 0 0
+    filter: grayscale(10)
+
+.author-card__info
+  padding: 10px
+  display: flex
+  flex-direction: column
+  color: var(--text-color)
+  font-weight: 500
+
+.author-card__name
+  font-size: 16px
+
+.author-card__branch
+  font-size: 14px
+
+.author-card__btn
+  margin: 14px 0
+  align-self: center
+  padding: 10px 16px
+  border: 1px solid var(--text-accent)
+  font-size: 14px
+  color: var(--text-color)
+  font-weight: 500
+  background: transparent
+  transition: .2s linear
+  &:hover
+    background: var(--text-accent)
+    color: var(--standart)
+
+.author-search
+  border: 1px solid #ccc
+  display: flex
+  justify-content: space-between
+  width: 300px
+
+.author-search__input
+  padding: 10px
+  color: var(--text-color)
+  font-size: 14px
+  width: 100%
+  &::selection
+    background-color: #000
+    color: #FFF
+
+.author-search__btn
+  background-color: var(--text-accent)
+  padding: 10px
+  color: var(--standart)
